@@ -1,0 +1,3 @@
+@for(product of products; track product.id){
+    <app-product [routerLink]="['/products', product.id]" [product]="product" (onBuy)="Buy($event)" (onDelete)="deleteProduct($event)"></app-product>
+}
